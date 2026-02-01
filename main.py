@@ -23,6 +23,6 @@ def main():
 if __name__ == "__main__":
     try:
         main()
-    except Exception as err:
-        print(str(err))
+    except Exception as e:
+        log_progress(f"Data extraction failed - {e}")
         raise
