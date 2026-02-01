@@ -7,24 +7,20 @@ Completed as part of the **IBM Data Engineering Professional Certificate**.
 ## 📋 Project Overview
 This project implements a modular **ETL (Extract, Transform, Load)** process:
 
-**Extract**: Scrapes raw HTML data from Wikipedia ("List of largest banks") using `BeautifulSoup`.
+1. **Extract**: Scrapes raw HTML data from Wikipedia ("List of largest banks") using `BeautifulSoup`.
 
-**Transform**: Cleans the data and converts Market Capitalization from USD to GBP, EUR, and INR using exchange rates via `Pandas`.
+2. **Transform**: Cleans the data and converts Market Capitalization from USD to GBP, EUR, and INR using exchange rates via `Pandas`.
 
-**Load**: Saves the processed data into two targets:
-
-**CSV File**: For quick auditing and local analysis.
-
-**SQLite Database**: Simulating a persistent Data Warehouse layer.
+3. **Load**: Saves the processed data into two targets:
+    - **CSV File**: For quick auditing and local analysis.
+    - **SQLite Database**: Simulating a persistent Data Warehouse layer.
 
 **Logging**: Tracks every stage of the pipeline execution in `project/log/code_log.txt`.
 
 ## 🛠️ Tech Stack
-Language: Python 3.9+
-
-Libraries: `pandas, numpy, requests, beautifulsoup4, sqlite3`
-
-Architecture: Modular ETL design
+- Language: Python
+- Libraries: `pandas, numpy, requests, beautifulsoup4, sqlite3`
+- Architecture: Modular ETL design
 
 ## 📂 Project Structure
 The code is organized into logical modules for maintainability:
@@ -76,11 +72,9 @@ python main.py
 
 **Expected Output:**
 
-A new file `out.csv` will be created.
-
-A SQLite database `Banks.db` will be updated.
-
-Progress will be logged to `project/log/code_log.txt`.
+1. A new file `out.csv` will be created.
+2. A SQLite database `Banks.db` will be updated.
+3. Progress will be logged to `project/log/code_log.txt`.
 
 ## 📝 Logging
 The pipeline implements an auditing mechanism. Example log output:
