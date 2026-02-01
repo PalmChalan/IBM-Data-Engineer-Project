@@ -19,7 +19,7 @@ This project implements a modular **ETL (Extract, Transform, Load)** process:
 
 ## 🛠️ Tech Stack
 - Language: Python
-- Libraries: `pandas, numpy, requests, beautifulsoup4, sqlite3`
+- Libraries: `pandas`, `numpy`, `requests`, `beautifulsoup4`, `sqlite3`
 - Architecture: Modular ETL design
 
 ## 📂 Project Structure
@@ -46,10 +46,9 @@ The code is organized into logical modules for maintainability:
 ## 🚀 Setup & Installation
 **1. Clone the repository**
 ```
-git clone https://github.com/your-username/ibm-etl-project.git
-cd ibm-etl-project
+git clone https://github.com/PalmChalan/IBM-Data-Engineer-Project.git
 ```
-**2. Create a Virtual Environment It is recommended to use a virtual environment to avoid conflicts.**
+**2. Create a Virtual Environment**: It is recommended to use a virtual environment to avoid conflicts.
 ```
 # Windows
 python -m venv venv
@@ -72,9 +71,9 @@ python main.py
 
 **Expected Output:**
 
-1. A new file `out.csv` will be created.
+1. A new file `out.csv` will be created inside data folder.
 2. A SQLite database `Banks.db` will be updated.
-3. Progress will be logged to `project/log/code_log.txt`.
+3. Progress will be logged to `/log/code_log.txt`.
 
 ## 📝 Logging
 The pipeline implements an auditing mechanism. Example log output:
