@@ -6,6 +6,7 @@ def load_to_csv(df, output_path):
     the provided path. Function returns nothing.'''
     current_dir = os.path.dirname(os.path.abspath(__file__))
     out_file_path = os.path.join(current_dir, '..', '..', 'data', output_path)
+    os.makedirs(os.path.dirname(out_file_path), exist_ok=True)
     try:
         df.to_csv(out_file_path)
         log_progress("Data saved to CSV file")
